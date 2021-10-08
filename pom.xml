@@ -294,7 +294,30 @@
         <enabled>false</enabled>
       </snapshots>
     </repository>
+    <repository>
+      <id>azuredevopsadonis</id>
+      <url>https://pkgs.dev.azure.com/azuredevopsadonis/_packaging/azuredevopsadonis/maven/v1</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
   </repositories>
+
+  <distributionManagement>
+    <repository>
+      <id>azuredevopsadonis</id>
+      <url>https://pkgs.dev.azure.com/azuredevopsadonis/_packaging/azuredevopsadonis/maven/v1</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </distributionManagement>
 
   <pluginRepositories>
     <pluginRepository>
