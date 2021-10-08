@@ -14,8 +14,16 @@ steps:
 - task: MavenAuthenticate@0
   inputs:
     artifactsFeeds: 'ArtifactRepositoryAdonis'
-- task: PublishBuildArtifacts@1
+- task: Maven@3
+  displayName: 'Maven Package'
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'Release'
-    publishLocation: 'Container'
+    mavenPomFile: 'pom.xml'
+
+- task: CopyFiles@2
+  displayName: 'Copy Files to artifact staging directory'
+  inputs:
+    SourceFolder: '$(System.DefaultWorkingDirectory)'
+    Contents: '**/target/*.?(war|jar)'
+    TargetFolder: $(Deploy.ArtifactStagingDirectory)
+
+- publish: $(Deploy.ArtifactStagingDirectory)
