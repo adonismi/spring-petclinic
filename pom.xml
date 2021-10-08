@@ -295,8 +295,8 @@
       </snapshots>
     </repository>
     <repository>
-      <id>azuredevopsadonis</id>
-      <url>https://pkgs.dev.azure.com/azuredevopsadonis/_packaging/azuredevopsadonis/maven/v1</url>
+      <id>ArtifactRepositoryAdonis</id>
+      <url>https://pkgs.dev.azure.com/azuredevopsadonis/AzureDevOpsTransfer/_packaging/ArtifactRepositoryAdonis/maven/v1</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -308,8 +308,8 @@
 
   <distributionManagement>
     <repository>
-      <id>azuredevopsadonis</id>
-      <url>https://pkgs.dev.azure.com/azuredevopsadonis/_packaging/azuredevopsadonis/maven/v1</url>
+      <id>ArtifactRepositoryAdonis</id>
+      <url>https://pkgs.dev.azure.com/azuredevopsadonis/AzureDevOpsTransfer/_packaging/ArtifactRepositoryAdonis/maven/v1</url>
       <releases>
         <enabled>true</enabled>
       </releases>
