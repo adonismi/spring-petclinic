@@ -14,13 +14,8 @@ steps:
 - task: MavenAuthenticate@0
   inputs:
     artifactsFeeds: 'ArtifactRepositoryAdonis'
-- task: Maven@3
+- task: PublishBuildArtifacts@1
   inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'Release'
+    publishLocation: 'Container'
