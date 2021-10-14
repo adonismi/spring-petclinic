@@ -119,6 +119,20 @@
       <artifactId>spring-boot-devtools</artifactId>
       <optional>true</optional>
     </dependency>
+
+    <!-- Selenium  -->
+    <dependency>
+      <groupId>org.Seleniumhq.Selenium</groupId>
+      <artifactId>Selenium-java</artifactId>
+      <version>4.0.0-alpha-1</version>
+    </dependency>
+     <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>6.9.10</version>
+      <scope>test</scope>
+     </dependency>
+    
   </dependencies>
 
   <scm>
