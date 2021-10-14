@@ -119,7 +119,12 @@
       <artifactId>spring-boot-devtools</artifactId>
       <optional>true</optional>
     </dependency>
-    
+    <!-- Selenium  -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>3.141.59</version>
+      </dependency>
   </dependencies>
 
   <scm>
@@ -160,18 +165,6 @@
             <groupId>io.spring.nohttp</groupId>
             <artifactId>nohttp-checkstyle</artifactId>
             <version>${nohttp-checkstyle.version}</version>
-          </dependency>
-          <!-- Selenium  -->
-          <dependency>
-            <groupId>org.Seleniumhq.Selenium</groupId>
-            <artifactId>Selenium-java</artifactId>
-            <version>4.0.0-alpha-1</version>
-          </dependency>
-          <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.9.10</version>
-            <scope>test</scope>
           </dependency>
         </dependencies>
         <executions>
